@@ -15,38 +15,38 @@ function verificar() {
             genero = 'Baixada Santitas'
             if (ano >= 0 && idade < 10){
             //criança
-                var idade = (`R$200,00 a R$350,00`)
+                var idade = (`R$${idade*10+300},00 a R$${idade*10+700},00`)
                 img.setAttribute('src','imagem/h1.jpg')
             }else if (idade < 30){
             //jovem
-                var idade = (`R$${idade*20},00 a R$${idade*40},00`)
+                var idade = (`R$${idade*8+300},00 a R$${idade*8+700},00`)
                 img.setAttribute('src','imagem/h2.jpg')
             }else if(idade < 50){
             //adulto
-                var idade = (`R$${idade*15},00 a R$${idade*38},00`)
+                var idade = (`R$${idade*6+300},00 a R$${idade*6+700},00`)
                 img.setAttribute('src','imagem/h3.jpg')
             } else {
             //idoso
-                var idade = (`R$${idade*10},00 a R$${idade*36},00`)
+                var idade = (`R$${idade*5+300},00 a R$${idade*5+700},00`)
                 img.setAttribute('src','imagem/h4.jpg')
             }
      } else if(fsex[1].checked){
             genero = 'Outros'
             if (idade >= 0 && idade < 50){
             //criança
-                 var idade = ('R$700,00 a R$1000,00')
+                 var idade = (`R$${idade*5+500},00 a R$${idade*5+900},00`)
                 img.setAttribute('src','imagem/m1.jpg')
             }else if (idade < 80){
             //jovem
-                 var idade = (`R$${idade*15},00 a R$${idade*25},00`)
+                 var idade = (`R$${idade*4+500},00 a R$${idade*4+900},00`)
                 img.setAttribute('src','imagem/m2.jpg')
             }else if(idade < 150){
             //adulto
-                 var idade = (`R$${idade*10},00 a R$${idade*23},00`)
+                 var idade = (`R$${idade*3+500},00 a R$${idade*3+900},00`)
                 img.setAttribute('src','imagem/m3.jpg')
             } else {
             //idoso
-                var idade = (`R$${idade*9},00 a R$${idade*20},00`)
+                var idade = (`R$${idade*2+500},00 a R$${idade*2+900},00`)
                 img.setAttribute('src','imagem/m4.jpg')
         }
     }
