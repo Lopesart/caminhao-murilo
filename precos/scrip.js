@@ -15,38 +15,38 @@ function verificar() {
             genero = 'Baixada Santitas'
             if (ano >= 0 && idade < 10){
             //criança
-                var idade = ('R$200,00 a R$350,00')
+                var idade = (`R$200,00 a R$350,00`)
                 img.setAttribute('src','imagem/h1.jpg')
-            }else if (idade < 33){
+            }else if (idade < 30){
             //jovem
-                var idade = ('R$300,00 a R$650,00')
+                var idade = (`R$${idade*20},00 a R$${idade*40},00`)
                 img.setAttribute('src','imagem/h2.jpg')
             }else if(idade < 50){
             //adulto
-                var idade = ('R$400,00 a R$650,00')
+                var idade = (`R$${idade*15},00 a R$${idade*38},00`)
                 img.setAttribute('src','imagem/h3.jpg')
             } else {
             //idoso
-                var idade = ('R$500,00 a R$850,00')
+                var idade = (`R$${idade*10},00 a R$${idade*36},00`)
                 img.setAttribute('src','imagem/h4.jpg')
             }
      } else if(fsex[1].checked){
             genero = 'Outros'
             if (idade >= 0 && idade < 50){
             //criança
-                 var idade = ('R$700,00 a R$950,00')
+                 var idade = ('R$700,00 a R$1000,00')
                 img.setAttribute('src','imagem/m1.jpg')
             }else if (idade < 80){
             //jovem
-                 var idade = ('R$1200,00 a R$2500,00')
+                 var idade = (`R$${idade*15},00 a R$${idade*25},00`)
                 img.setAttribute('src','imagem/m2.jpg')
             }else if(idade < 150){
             //adulto
-                 var idade = ('R$2300,00 a R$3250,00')
+                 var idade = (`R$${idade*10},00 a R$${idade*23},00`)
                 img.setAttribute('src','imagem/m3.jpg')
             } else {
             //idoso
-                var idade = ('R$2800,00 a R$8000,00')
+                var idade = (`R$${idade*9},00 a R$${idade*20},00`)
                 img.setAttribute('src','imagem/m4.jpg')
         }
     }
