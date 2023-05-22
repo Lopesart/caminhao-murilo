@@ -52,7 +52,7 @@ function verificar() {
     }
         res.innerHTML = `Transporte com caminhão baú de Baixada Santista x ${genero}, tem um valor medio de ${idade}.<br>Para melhores infomações entre em contato (13) 99724-5567<br>`
         res.appendChild(img).style.borderRadius = '10%'
-        img.style.padding = '0px'
+        img.style.padding = '5px'
         img.style.width = '280px'
     }
 }
