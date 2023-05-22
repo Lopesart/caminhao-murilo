@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarildo Preços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <H1>Verificador de Preço Medio</H1>
+    </header>
+    <section>
+        <div>
+           <p>Quantidade de Km</p> 
+           <input type="number" name="txtano" id="txtano" min="0">
+           <p>Destino:
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Baixada Santitas</label><br>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Outros</label>
+           </p>
+           <p>
+            <input type="button" value="Verificar" onclick="verificar()" id="bt">
+           </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o preço medio!
+        </div>
+    </section>
+    <footer>
+        <p>*Preço pode sofrer varioções dependendo das expecificações do serviço</p>
+    </footer>
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=5513997245567" class="whatsapp_float" target="_blank">
+            <i class="whatsapp-icon">Contato pelo WhatsApp</i>
+        </a>
+    </div>
+    <script src="scrip.js"></script>
+</body>
+</html>
