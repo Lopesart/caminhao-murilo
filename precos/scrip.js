@@ -15,24 +15,24 @@ function verificar() {
             genero = 'Baixada Santitas'
             if (ano >= 0 && idade < 10){
             //criança
-                var idade = (`tem valor medeio de R$${idade*10+300},00 a R$${idade*10+700},00`)
+                var idade = (`tem valor médio de R$${idade*10+300},00 a R$${idade*10+700},00`)
                 img.setAttribute('src','imagem/h1.jpg')
             }else if (idade < 30){
             //jovem
-                var idade = (`tem valor medeio de R$${idade*9+300},00 a R$${idade*10+700},00`)
+                var idade = (`tem valor médio de R$${idade*9+300},00 a R$${idade*10+700},00`)
                 img.setAttribute('src','imagem/h2.jpg')
             }else if(idade < 50){
             //adulto
-                var idade = (`tem valor medeio de R$${idade*8+300},00 a R$${idade*9+700},00`)
+                var idade = (`tem valor médio de R$${idade*8+300},00 a R$${idade*9+700},00`)
                 img.setAttribute('src','imagem/h3.jpg')
             } else {
             //idoso
-                var idade = (`tem valor medeio de R$${idade*7+300},00 a R$${idade*8+700},00`)
+                var idade = (`tem valor médio de R$${idade*7+300},00 a R$${idade*8+700},00`)
                 img.setAttribute('src','imagem/h4.jpg')
             }
      } else if(fsex[1].checked){
             genero = 'Outros' 
-            if (idade >= 0 && idade < 1000000){
+            if (idade >= 0 && idade < 1000000000000){
             //criança
                  var idade = (`Solicito que `)
                 img.setAttribute('src','imagem/001.jpeg')
