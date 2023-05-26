@@ -15,28 +15,28 @@ function verificar() {
             genero = 'Baixada Santitas'
             if (ano >= 0 && idade < 10){
             //criança
-                var idade = (`R$${idade*10+300},00 a R$${idade*10+700},00`)
+                var idade = (`tem valor medeio de R$${idade*10+300},00 a R$${idade*10+700},00`)
                 img.setAttribute('src','imagem/h1.jpg')
             }else if (idade < 30){
             //jovem
-                var idade = (`R$${idade*9+300},00 a R$${idade*10+700},00`)
+                var idade = (`tem valor medeio de R$${idade*9+300},00 a R$${idade*10+700},00`)
                 img.setAttribute('src','imagem/h2.jpg')
             }else if(idade < 50){
             //adulto
-                var idade = (`R$${idade*8+300},00 a R$${idade*9+700},00`)
+                var idade = (`tem valor medeio de R$${idade*8+300},00 a R$${idade*9+700},00`)
                 img.setAttribute('src','imagem/h3.jpg')
             } else {
             //idoso
-                var idade = (`R$${idade*7+300},00 a R$${idade*8+700},00`)
+                var idade = (`tem valor medeio de R$${idade*7+300},00 a R$${idade*8+700},00`)
                 img.setAttribute('src','imagem/h4.jpg')
             }
      } else if(fsex[1].checked){
-            genero = 'Outros'
-            if (idade >= 0 && idade < 50){
+            genero = 'Outros' 
+            if (idade >= 0 && idade < 1000000){
             //criança
-                 var idade = (`R$${idade*7+500},00 a R$${idade*8+900},00`)
-                img.setAttribute('src','imagem/m1.jpg')
-            }else if (idade < 80){
+                 var idade = (`Solicito que `)
+                img.setAttribute('src','imagem/001.jpeg')
+            }/*else if (idade < 80){
             //jovem
                  var idade = (`R$${idade*6+500},00 a R$${idade*7+900},00`)
                 img.setAttribute('src','imagem/m2.jpg')
@@ -48,9 +48,9 @@ function verificar() {
             //idoso
                 var idade = (`R$${idade*4+500},00 a R$${idade*5+900},00`)
                 img.setAttribute('src','imagem/m4.jpg')
-        }
+        }*/
     }
-        res.innerHTML = `Transporte com caminhão baú de Baixada Santista x ${genero}, tem um valor medio de ${idade}.<br>Para melhores infomações entre em contato (13) 99724-5567<br>`
+        res.innerHTML = `Transporte com caminhão baú de Baixada Santista x ${genero}, ${idade} para melhor avaliação entre em contato<br>(13) 99724-5567<br>Obrigado pela compreensão<br>`
         res.appendChild(img).style.borderRadius = '10%'
         img.style.padding = '5px'
         img.style.width = '280px'
