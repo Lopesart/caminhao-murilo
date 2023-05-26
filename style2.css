@@ -66,7 +66,7 @@ header > h2 {
     padding-bottom: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     nav {
       display: none;
     }
@@ -124,7 +124,7 @@ li > button:hover {
 }
 
   
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
     #navfoto {
         padding: 0px 0px 5px 10px;
         width: 30px;

@@ -36,5 +36,9 @@
     div.scrollIntoView({ behavior: 'smooth' });
   };
 
+  function scrollToDiv5() {
+    var div = document.getElementById("p5");
+    div.scrollIntoView({ behavior: 'smooth' });
+  };
   
 
