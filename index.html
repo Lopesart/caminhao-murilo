@@ -21,12 +21,34 @@
                 <source media="(max-width: 930px)" srcset="imagens/logoM.png">
                 <img src="imagens/logoG.png" alt="logo amarildo">
             </picture>
+
+            <div id="botao">
+                <img src="imagens/lopes.png" id="navfoto" alt="Botão" onclick="mostrarLinks()">
+              </div>
+              
+              <div class="minha-div" id="links" style="display: none;">
+                <ul>
+                  <li><a href="https://api.whatsapp.com/send?phone=5513997245567" target="_blank" id="button" class="menuf">Contato: (13) 99724-5567</a></li>
+                  <li><a href="precos/precos.html" id="button" class="menuf">Orçamento</a></li>
+                  <li><button onclick="scrollToDiv1()" class="p1">Como funcionara o frete</button></li>
+                  <li><button onclick="scrollToDiv2()" class="p2">Porque nos contratar</button></li>
+                  <li><button onclick="scrollToDiv3()" class="p3">Quem somos</button></li>
+                  <li><button onclick="scrollToDiv4()" class="p4">Localização</button></li>
+                </ul>
+              </div>
+
     </header>
-        
     <nav><!--navegador -->
-        <a href="https://api.whatsapp.com/send?phone=5513997245567" target="_blank">Contato: (13) 99724-5567</a>
-        <a href="precos/precos.html">Orçamento</a>
+        <nav>
+            <a href="https://api.whatsapp.com/send?phone=5513997245567" target="_blank" id="button" class="menu">Contato: (13) 99724-5567</a>
+            <a href="precos/precos.html" id="button" class="menu">Orçamento</a>
+            <button onclick="scrollToDiv1()" class="p1">Como funcionara o frete</button>
+            <button onclick="scrollToDiv2()" class="p2">Porque nos contratar</button>
+            <button onclick="scrollToDiv3()" class="p3">Quem somos</button>
+            <button onclick="scrollToDiv4()" class="p4">Localização</button>
+        </nav>
     </nav>
+   
 
 <main><!-- conteudo principal -->
     <section><!-- assuntos -->
@@ -34,7 +56,7 @@
         
         <p>Possuímos funcionários treinados e qualificados para oferecer um serviço com a maior segurança para a tranquilidade de nossos clientes.</p>
         
-        <h2>Como vai funciona o frete ?</h2>
+        <h2 id="p1">Como vai funciona o frete ?</h2>
         
         <p>Utilizando um caminhão equipado com um compartimento fechado feito de metal, conhecido como baú, que oferece proteção e segurança para a carga durante o transporte.</p>
         <strong>
@@ -47,10 +69,11 @@
         <p>Faremos sua mudança residencial ou de escritório, em <strong>Praia Grande e região</strong> para todo o <strong>Estado de São Paulo</strong>.</p>
         <p>Desmontados e montamos guarda roupas, armários, estantes, camas e sofás (exceto furações em paredes).</p>
     </section>
-
+    <div>
+        <!-- Conteúdo da div -->
     <aside> <!-- conteudo extra -->
-        <h3>Porque nos contratar ?</h3>
-        <p>Essas são algumas das vantagens do nosso serviço de transporte com caminhão baú. </p>
+        <h3 id="p2">Porque nos contratar ?</h3>
+        <p>Essas são algumas das vantagens do nosso serviço. </p>
         <ul>
             <li>1 - <abbr title="Os caminhões baú são altamente versáteis e podem transportar uma ampla variedade de mercadorias, desde alimentos perecíveis até móveis e equipamentos pesados">Versatilidade:</abbr><!--abreviatura --></li>
             <li>2 - <abbr title="Os caminhões baú oferecem proteção contra as condições climáticas, como chuva, sol intenso e poeira, ajudando a preservar a qualidade e integridade dos produtos durante o transporte.">Proteção dos produtos:</abbr></li>
@@ -64,6 +87,7 @@
             <li>10 - <abbr title="O transporte com caminhão baú permite programar entregas conforme a necessidade do cliente, proporcionando maior confiabilidade e cumprimento de prazos.">Confiabilidade:</abbr></li>
         </ul>
     </aside>
+    </div>
 
     <strong>
         <p>Faça um orçamento com a nossa empresa !!! <a href="precos/precos.html" >Clique Aqui</a></p>
@@ -71,12 +95,12 @@
 
     <section>
         <p></p>
-        <h2>Sobre nós</h2>
+        <h2 id="p3">Sobre nós</h2>
         <p></p>
         <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/1nyYZmujcPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
         <h2>localização</h2>
         <p></p>
-        <div class="video"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d116602.66264009502!2d-46.5020322!3d-24.0369462!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5a99a581e4c6a9f%3A0x4821b70ebb953fab!2sAmarildo%20Carretos!5e0!3m2!1spt-BR!2sbr!4v1684975161565!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="video" id="p4"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d116602.66264009502!2d-46.5020322!3d-24.0369462!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5a99a581e4c6a9f%3A0x4821b70ebb953fab!2sAmarildo%20Carretos!5e0!3m2!1spt-BR!2sbr!4v1684975161565!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <p class="mud"><strong>Amarildo mudanças e transportes</strong>. <strong>Mudanças em Praia Grande</strong> | <strong>Mudanças Santos</strong> | <strong>Mudanças São Vicente</strong> | <strong>Mudança Baixada Santista</strong> | <strong>Mudanças Litoral x São Paulo</strong></p>
     </section>
 </main>
@@ -92,6 +116,6 @@
     <p>CNPJ: 29.051.979/0001-09</p>
 </footer>
 
-
+<script src="scrip.js"></script>
 </body>
 </html>
