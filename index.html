@@ -42,7 +42,7 @@
     <nav><!--navegador -->
         <nav>
             <a href="https://api.whatsapp.com/send?phone=5513997245567" target="_blank" id="button" class="menu">Contato: (13) 99724-5567</a>
-            <a href="precos/precos.html" id="button" class="menu">Orçamento</a>
+            <button onclick="scrollToDiv6()" class="p6">Orçamento</button>
             <button onclick="scrollToDiv1()" class="p1">Como funcionara o frete</button>
             <button onclick="scrollToDiv2()" class="p2">Porque nos contratar</button>
             <button onclick="scrollToDiv5()" class="p5">Tamanho do Baú</button>
@@ -70,11 +70,6 @@
         <p>Faremos sua mudança residencial ou de escritório, em <strong>Praia Grande e região</strong> para todo o <strong>Estado de São Paulo</strong>.</p>
         <p>Desmontados e montamos guarda roupas, armários, estantes, camas e sofás (exceto furações em paredes).</p>
     </section>
-    <section>
-        <h2 id="p3">Sobre nós</h2>
-        <p></p>
-        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/1nyYZmujcPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-    </section>
     <div>
         <!-- Conteúdo da div -->
     <aside> <!-- conteudo extra -->
@@ -94,10 +89,33 @@
             <li>10 - <abbr title="O transporte com caminhão baú permite programar entregas conforme a necessidade do cliente, proporcionando maior confiabilidade e cumprimento de prazos.">Confiabilidade:</abbr></li>
         </ul>
     </aside>
+    <p></p>
+    <section>
+        <h2 id="p3">Sobre nós</h2>
+        <p></p>
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/1nyYZmujcPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </section>
+    <H2 id="p6">Preço Médio Orçamento</H2>
+    <p></p>
     </div>
-    <strong>
-        <p>Faça um orçamento com a nossa empresa !!! <a href="precos/precos.html" >Clique Aqui</a></p>
-    </strong>
+    <section id="sectionpreco">
+        <div>
+           <p>Quantidade de Km</p> 
+           <input type="number" name="txtano" id="txtano" min="0">
+           <p>Destino:<br>
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Baixada Santita</label><br>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Outras Regiões</label>
+           </p>
+           <p>
+            <input type="button" value="Verificar" onclick="verificar()" id="bt">
+           </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o preço médio!
+        </div>
+    </section>
         <p></p>
     <section>
         <h2>localização</h2>
@@ -114,7 +132,8 @@
 </div>
 
 
-<footer><!-- rodape -->
+<footer id="footerpreco">
+    <p>*Preço pode sofrer variações dependendo das expecificações do serviço</p>
     <p>CNPJ: 29.051.979/0001-09</p>
 </footer>
 
